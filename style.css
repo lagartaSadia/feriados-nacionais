@@ -1,0 +1,50 @@
+body {
+  background-color: #a1bbd3;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 50px 0 ;
+  font-size: 20px;
+}
+
+form {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+form > input {
+  line-height: 2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+form > button {
+  height: 2.5rem;
+}
+
+form > button:hover {
+  cursor: pointer;
+}
+
+main {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  gap: 5px;
+}
+
+.card {
+  border: 2px solid rgb(61, 59, 75);
+  border-radius: 5px;
+  text-align: center;
+  background-color: #e6c7c7;
+}
