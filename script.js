@@ -16,6 +16,9 @@ butao.addEventListener("click", (event) => {
   event.preventDefault()
   // Pega o Ano digitado pelo usuário
   const ano = document.getElementById("text-ano").value
+  if(ano < 1900 || ano > 2199) {
+    alert("Não foi possível encontrar feriados para o ano escolhido!")
+  }
   // Chama a função que busca feriados na API
   getFeriados(ano)
 })
